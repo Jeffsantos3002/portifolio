@@ -1,13 +1,16 @@
 import Header from "./components/Header"
+import Inicio from "./pages/Inicio"
 
 function App() {
 
   return (
     
-    <body className=" bg-bg w-full h-full">
+    <div className=" bg-bg w-full h-full">
       <Header/>
-      <h1 className=' text-2xl'>Hello world</h1>
-    </body>
+      <Inicio/>
+      <div>mada</div>
+
+    </div>
   
   )
 }
