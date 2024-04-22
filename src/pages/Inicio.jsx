@@ -28,8 +28,9 @@ export default function Início() {
       </video>
       <div className="absolute inset-0 flex items-center justify-center flex-col space-y-2.5">
         <h1 className="text-white text-3xl sm:text-4xl 2xl:text-6xl font-bold">Jeferson de O. Santos</h1>
-        <h2 className=" text-2xl sm:text-3xl 2xl:text-5xl">Desenvolvedor Web <span className=" text-lilas">&lt;/&gt;</span></h2>
-        <div className="flex flex-row justify-center space-x-10 transition-transform duration-500 ease-in-out">
+        <h2 className=" text-2xl sm:text-3xl 2xl:text-5xl font-mono">Desenvolvedor Web <span className=" text-lilas">&lt;/&gt;</span></h2>
+
+        <div className="flex flex-row justify-center mx-5 space-x-5 md:space-x-10 transition-transform duration-500 ease-in-out">
           <a href="https://github.com/Jeffsantos3002" target="_blank"
             className="cursor-pointer flex flex-row items-center space-x-2 "
             onMouseEnter={handleGithub}
@@ -47,10 +48,11 @@ export default function Início() {
               40.6539 13.678 40.4639C5.72999 37.7539 0 30.0659 0 21.0059C0 9.67986 8.956 0.5 20 0.5Z" fill={github ? '#9747FF' : "white"}/>
             </svg>
             
-            <p className={`${github ? 'w-10 opacity-100 text-lilas text-2xl transform translate-x-0 transition-transform duration-500 ease-in-out' : 
+            <p className={`${github ? 'w-10 opacity-100 text-lilas hidden md:flex text-2xl transform translate-x-0 transition-transform duration-500 ease-in-out' : 
               'w-0 opacity-0 transform -translate-x-1 transition-transform duration-500 ease-in-out'} `}
             >Github</p>
          </a>
+
           <a href="https://www.linkedin.com/in/jeferson-de-oliveira-santos-b149b61b7/" target="_blank"
             className="cursor-pointer flex flex-row items-center space-x-2 "
             onMouseEnter={handleLinkedin}
@@ -69,9 +71,10 @@ export default function Início() {
                 15.0947 6.2461 15.0947H11.4717C11.9521 15.0947 12.252 15.3945 12.252 15.875V34.1924C12.252 34.6133 11.8906 34.9727 11.4717 
                 34.9727H6.2461C5.88478 34.9727 5.52539 34.5518 5.52539 34.1924Z" fill={linkedin ? '#007EBB' : "white"}/>
             </svg>
-            <p className={`${linkedin ? 'w-10 opacity-100 text-[#007EBB] text-2xl transform translate-x-0 transition-transform duration-500 ease-in-out' : 
+            <p className={`${linkedin ? 'w-10 opacity-100 text-[#007EBB] hidden md:flex text-2xl transform translate-x-0 transition-transform duration-500 ease-in-out' : 
               'w-0 opacity-0 transform -translate-x-1 transition-transform duration-500 ease-in-out'} `}>Linkedin</p>   
           </a>
+
           <a href={currilo} target="_blank"
             className="cursor-pointer flex flex-row items-center space-x-2 "
             onMouseEnter={handeCurriculum}
@@ -99,9 +102,10 @@ export default function Início() {
                 37.2983V9.26808H12.5297C13.1424 9.26808 13.643 8.77406 13.643 8.1548V2.71342H31.9039C32.4441 2.71342 32.8854 3.15476 32.8854 
                 3.69494V12.4038Z" fill={curriculum ? '#BD00FF' : "white"}/>
             </svg>
-            <p className={`${curriculum ? 'w-10 opacity-100 text-rosa text-2xl transform translate-x-0 transition-transform duration-500 ease-in-out' : 
+            <p className={`${curriculum ? 'w-10 opacity-100 text-rosa hidden md:flex text-2xl transform translate-x-0 transition-transform duration-500 ease-in-out' : 
               'w-0 opacity-0 transform -translate-x-1 transition-transform duration-500 ease-in-out'} `}>Currículo</p>    
           </a>
+          
         </div>
       </div>
     </div>

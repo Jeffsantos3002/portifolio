@@ -16,7 +16,24 @@ export default {
       lilas: '#9747FF',
       bg: '#1D1E1F',
       rosa: '#CD43FD',
-      buttonRosa: '#BD00FF'
+      buttonRosa: '#BD00FF',
+      azul: '#00FFFA',
+      iconTec: '#F3F2F2'
+    },
+    screens:{
+      'xs': '380px',
+      'sm': '640px',
+      'md': '768px',
+      // => @media (min-width: 768px) { ... }
+
+      'lg': '1024px',
+      // => @media (min-width: 1024px) { ... }
+
+      'xl': '1280px',
+      // => @media (min-width: 1280px) { ... }
+
+      '2xl': '1536px',
+      // => @media (min-width: 1536px) { ... }
     }
 
   },
