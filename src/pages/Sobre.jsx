@@ -17,7 +17,7 @@ export default function Sobre(){
   
   const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9]
   return(
-    <div className="flex flex-col items-center pt-12" id='about'>
+    <div className="flex flex-col xl:h-screen items-center justify-center pt-12" id='about'>
       <h1 className="text-4xl">Um pouco sobre mim</h1>
       <span className="bg-azul w-[50px] h-[4px]"></span>
 
@@ -26,8 +26,8 @@ export default function Sobre(){
           <span className=' bg-lilas w-48 h-48 rounded-full blur-3xl absolute '></span>
           <img src={Perfil} alt='foto-de-perfil' title='foto-de-perfil' className=' z-10'/>
         </div>
-        <div className='flex flex-col justify-center space-y-14 xl:w-[676px] md:px-10 xl:px-0'>
-          <p className='font-mono text-2xl'>Olá, eu sou um Desenvolvedor Web com paixão por desafios e um olhar futurista para a tecnologia. Transformando linhas de código 
+        <div className='flex flex-col justify-center items-center xl:items-start space-y-14 xl:w-[676px] md:px-10 xl:px-0'>
+          <p className='font-mono text-2xl text-center xl:text-start'>Olá, eu sou um Desenvolvedor Web com paixão por desafios e um olhar futurista para a tecnologia. Transformando linhas de código 
             em experiências inovadoras, trago o espírito do futuro para o presente através do meu trabalho.
           </p>
           <p className=' text-lilas font-mono text-xl'> Confira as engrenagens que movem meu mundo atualmente </p>
