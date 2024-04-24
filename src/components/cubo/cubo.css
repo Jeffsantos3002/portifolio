@@ -10,7 +10,7 @@
   height: 100%;
   position: absolute;
   width: 100%;
-  border: 5px solid var(--clr);
+  /* border: 5px solid var(--clr); */
 }
 
 /* Transformações inimgiduais para cada face do cubo */

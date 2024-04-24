@@ -68,7 +68,7 @@ export default function Projetos(){
             <p className="text-center ">Transformando linhas de código em experiências inovadoras, trago o espírito do futuro para o presente através do meu trabalho.</p>
             <p className=" text-azul text-center">Clique em uma das faces do cubo.</p>
           </div>
-          <div className="mt-36 mb-14">
+          <div className="mt-36 xl:mt-0 mb-14">
             <Cubo faces={faces}/>
           </div>
         </div>

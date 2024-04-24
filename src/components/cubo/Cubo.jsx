@@ -21,15 +21,15 @@ export default function Cubo({faces}){
 
   return(
     <div className='h-80 w-full'>
-      <div className={`cubo `} style={{ animationPlayState: visivel ? 'paused' : 'running' }}>
+      <div className="cubo"  style={{ animationPlayState: visivel ? 'paused' : 'running' }}>
 
         {faces.map((face, index)=>(
-          <img src={face.src} alt={`face-${index}`} title={face.name} className=' cursor-pointer' onClick={()=>abrirModal(face)} key={index}/>
+          <img src={face.src} alt={`face-${index}`} title={face.name} className=' cursor-pointer border-2  border-azul' onClick={()=>abrirModal(face)} key={index}/>
         ))}
       </div>
       <Modal visivel={visivel} onClose={handleCloseModal} data={data}/>
       <div className="flex items-center justify-center mt-28">
-        <img src={elipse} className='sombra  w-28 blur-md'/>
+        <img src={elipse} className='sombra w-28 blur-md'/>
       </div>
     </div>
 
