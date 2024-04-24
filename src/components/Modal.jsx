@@ -20,8 +20,8 @@ export default function Modal({visivel, onClose, data}) {
             <p className="py-4 text-xl font-mono">{data.description}</p>
             <p className='text-lg'><span className='text-xl'>Tecnologias:</span> {data.tecnologias}</p>
             <div>
-              <a href={data.deploy} className="btn btn-ghost bg-[#4f2f7a] border-none mr-10 text-xl" target='_blank'>Deploy</a>
-              <a href={data.github} className="btn btn-ghost bg-[#4f2f7a] border-none text-black text-xl" target='_blank'>GitHub</a>
+              {data.deploy && (<a href={data.deploy} className="btn btn-ghost bg-[#4f2f7a] border-none mr-10 text-xl" target='_blank'>Deploy</a>)}
+              { data.github && (<a href={data.github} className="btn btn-ghost bg-[#4f2f7a] border-none text-black text-xl" target='_blank'>GitHub</a>)}
             </div>
           </div>
           <form method="dialog" className="modal-backdrop opacity-40 bg-bg">

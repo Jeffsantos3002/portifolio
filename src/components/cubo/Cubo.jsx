@@ -2,6 +2,7 @@ import { useState } from 'react'
 
 import './cubo.css'
 import Modal from '../Modal'
+import elipse from '../../assets/cubo/ellipse.svg'
 
 export default function Cubo({faces}){
   
@@ -27,6 +28,9 @@ export default function Cubo({faces}){
         ))}
       </div>
       <Modal visivel={visivel} onClose={handleCloseModal} data={data}/>
+      <div className="flex items-center justify-center mt-28">
+        <img src={elipse} className='sombra  w-28 blur-md'/>
+      </div>
     </div>
 
   )

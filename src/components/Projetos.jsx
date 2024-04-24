@@ -57,18 +57,18 @@ export default function Projetos(){
   ]
 
   return(
-    <div className="flex flex-col xl:h-screen items-center space-y-5 bg-projetos">
+    <div className="flex flex-col xl:h-screen items-center space-y-5 bg-projetos pb-10">
         <span className=" bg-azul w-full h-2 mb-14"></span>
         <div className="flex flex-col justify-center items-center space-y-1">
           <h1 className=" text-4xl">Projetos</h1>
           <span className=" bg-azul w-12 h-1"></span>
         </div>
-        <div className="w-full xl:max-w-[1200px] flex flex-col xl:flex-row justify-center xl:justify-between items-center space-y-36 px-5 pt-24">
+        <div className="w-full xl:max-w-[1200px] flex flex-col xl:flex-row justify-center xl:justify-between items-center  px-5 pt-24">
           <div className="xl:max-w-[620px] font-mono text-2xl space-y-5">
             <p className="text-center ">Transformando linhas de código em experiências inovadoras, trago o espírito do futuro para o presente através do meu trabalho.</p>
             <p className=" text-azul text-center">Clique em uma das faces do cubo.</p>
           </div>
-          <div>
+          <div className="mt-36 mb-14">
             <Cubo faces={faces}/>
           </div>
         </div>
