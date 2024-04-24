@@ -18,7 +18,9 @@ export default {
       rosa: '#CD43FD',
       buttonRosa: '#BD00FF',
       azul: '#00FFFA',
-      iconTec: '#F3F2F2'
+      iconTec: '#F3F2F2',
+      projetos: '#343232',
+      modal: '#CD43FD'
     },
     screens:{
       'xs': '380px',

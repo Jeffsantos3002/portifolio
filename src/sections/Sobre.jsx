@@ -37,7 +37,7 @@ export default function Sobre(){
             </div>
             <div className=' w-full hidden sm:flex space-x-2'>
             {slides.map( (slide, index) => (                
-                <Tecnologias>
+                <Tecnologias key={index}>
                   <img src={slide} alt={`slide${index + 1}`} title={`slide${index + 1}`} />
                 </Tecnologias>
               )

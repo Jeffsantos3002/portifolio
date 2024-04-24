@@ -1,8 +1,9 @@
 import { useRef, useEffect } from "react";
 
 import Header from "./components/Header";
-import Inicio from "./pages/Inicio";
-import Sobre from "./pages/Sobre";
+import Inicio from "./sections/Inicio";
+import Sobre from "./sections/Sobre";
+import Projetos from "./components/Projetos";
 
 function App() {
 
@@ -13,6 +14,7 @@ function App() {
       <main>
         <Inicio/>
         <Sobre/>
+        <Projetos/>
       </main>
     </div>
   );
