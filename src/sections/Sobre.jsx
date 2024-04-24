@@ -2,6 +2,7 @@
 import Perfil from '../assets/foto-Perfil.svg'
 import Carrossel from '../components/Carrossel'
 import Tecnologias from '../components/Tecnologias';
+import Title from '../components/Title';
 
 import slide1 from '../assets/carrossel/slide1.svg';
 import slide2 from '../assets/carrossel/slide2.svg';
@@ -18,8 +19,8 @@ export default function Sobre(){
   const slides = [slide1, slide2, slide3, slide4, slide5, slide6, slide7, slide8, slide9]
   return(
     <div className="flex flex-col xl:h-screen items-center justify-center pt-12" id='about'>
-      <h1 className="text-4xl">Um pouco sobre mim</h1>
-      <span className="bg-azul w-[50px] h-[4px]"></span>
+      
+      <Title texto={"Um pouco sobre mim"} color={"bg-azul"}/>
 
       <div className='px-5  w-full xl:w-[1260px] py-24 flex flex-col items-center justify-between xl:flex-row space-y-10 xl:space-y-0'>
         <div className='flex  relative justify-center items-center'>
