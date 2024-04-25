@@ -4,6 +4,7 @@ import Header from "./components/Header";
 import Inicio from "./sections/Inicio";
 import Sobre from "./sections/Sobre";
 import Projetos from "./components/Projetos";
+import Contato from "./sections/Contato";
 
 function App() {
 
@@ -15,6 +16,7 @@ function App() {
         <Inicio/>
         <Sobre/>
         <Projetos/>
+        <Contato/>
       </main>
     </div>
   );
