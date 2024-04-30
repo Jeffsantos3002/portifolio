@@ -1,6 +1,6 @@
 import { useState } from 'react'
 
-import './cubo.css'
+import '../../animations.css'
 import Modal from '../Modal'
 import elipse from '../../assets/cubo/ellipse.svg'
 

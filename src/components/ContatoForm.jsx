@@ -77,7 +77,7 @@ export default function ContatoForm() {
   return (
     <form
       ref={form}
-      className="flex flex-col items-center justify-center bg-lilas rounded-md px-5 py-2.5"
+      className="flex flex-col items-center justify-center bg-lilas rounded-md px-5 py-2.5 z-10"
       action="https://api.staticforms.xyz/submit" method="POST"
     >
       <div className="md:w-96 flex flex-col space-y-5">

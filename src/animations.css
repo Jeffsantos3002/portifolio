@@ -67,3 +67,71 @@
       transform: rotate(360deg) rotateX(360deg) rotateY(360deg);
   }
 }
+
+/* ------------------Contato--------------------------------------*/
+
+#circle1{
+  left: 0;
+ animation: cair1 25s infinite linear;  
+ animation-delay: 2s; 
+}
+#circle2{
+  top: 10px;
+  animation: cair2 20s infinite linear; 
+  animation-delay: 5s; 
+ }
+#circle3{
+  animation: cair3 15s infinite linear;  
+  animation-delay: 3s; 
+ }
+#circle4{
+  top: 10px;
+  animation: cair4 30s infinite linear;  
+  animation-delay: 8s; 
+ }
+#circle5{
+  animation: cair 5s infinite;  
+ }
+#circle6{
+  animation: cair 5s infinite;  
+ }
+#circle7{
+  animation: cair 5s infinite;  
+ }
+#circle8{
+  animation: cair 5s infinite;  
+ }
+       
+
+@keyframes cair1 {
+  from{
+    transform: translateY(100vh);
+  }
+  to{
+    transform: translateY(0vh) translateX(100vw);
+  }
+}
+@keyframes cair2 {
+  from{
+    transform: translateY(100vh);
+  }
+  to{
+    transform: translateY(50vh) translateX(100vw);
+  }
+}
+@keyframes cair3 {
+  from{
+    transform: translateY(50vh) translateX(100vw);
+  }
+  to{
+    transform: translateY(80vh) translateX(0vw);
+  }
+}
+@keyframes cair4 {
+  from{
+    transform: translateY(0vh) translateX(0vw);
+  }
+  to{
+    transform: translateY(90vh) translateX(100vw);
+  }
+}
