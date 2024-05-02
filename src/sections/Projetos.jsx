@@ -1,8 +1,8 @@
-import Cubo from "./cubo/Cubo"
+import Cubo from "../components/cubo/Cubo"
 
 import AVA from '../assets/cubo/AVA.png'
 import URBITAVEL from '../assets/cubo/URBITAVEL.png'
-import Title from "./Title"
+import Title from "../components/Title"
 
 export default function Projetos(){
 
@@ -58,7 +58,7 @@ export default function Projetos(){
   ]
 
   return(
-    <div className="flex flex-col xl:h-screen items-center space-y-5 bg-projetos pb-20">
+    <div className="flex flex-col xl:h-screen items-center space-y-5 bg-projetos pb-20" id="Projetos">
         <span className=" bg-azul w-full h-2 mb-14"></span>
         <Title texto={"Projetos"} color={"bg-azul"}/>
         <div className="w-full xl:max-w-[1200px] h-full flex flex-col xl:flex-row justify-center xl:justify-between items-center  px-5 pt-24">

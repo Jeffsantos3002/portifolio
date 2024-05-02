@@ -22,7 +22,7 @@ export default function Início() {
   }
 
   return (
-    <div className="relative  h-screen">
+    <div className="relative h-screen" id="inicio">
       <video autoPlay playsInline loop muted className="w-full h-full object-cover opacity-70">
         <source src={bg} type="video/mp4" alt='video-background' className="absolute inset-0 " />
       </video>

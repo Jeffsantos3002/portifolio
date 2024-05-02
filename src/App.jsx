@@ -3,7 +3,7 @@ import { useRef, useEffect } from "react";
 import Header from "./components/Header";
 import Inicio from "./sections/Inicio";
 import Sobre from "./sections/Sobre";
-import Projetos from "./components/Projetos";
+import Projetos from "./sections/Projetos";
 import Contato from "./sections/Contato";
 
 import { useInView } from 'react-intersection-observer';
@@ -17,15 +17,11 @@ function App() {
 
   // Configurações do Intersection Observer
   const { ref, inView } = useInView({
-    threshold: 0 // Quando qualquer parte do elemento é visível dentro do viewport
+    threshold: 0.1 // Quando qualquer parte do elemento é visível dentro do viewport
   });
 
     // Atualiza o estado quando ocorre interseção
     useEffect(() => {
-      console.log("Interseção ocorreu:", inView);
-      console.log("Ref:", ref);
-
-
       setIsIntersecting(inView);
     }, [inView]);
   
