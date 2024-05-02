@@ -72,28 +72,27 @@
 
 #circle1{
   left: 0;
- animation: cair1 25s infinite linear;  
+ animation: cair1 25s infinite linear reverse;  
  animation-delay: 2s; 
 }
 #circle2{
-  top: 10px;
-  animation: cair2 20s infinite linear; 
+  animation: cair2 20s infinite linear reverse; 
   animation-delay: 5s; 
  }
 #circle3{
-  animation: cair3 15s infinite linear;  
+  animation: cair3 15s infinite linear reverse;  
   animation-delay: 3s; 
  }
 #circle4{
   top: 10px;
-  animation: cair4 30s infinite linear;  
+  animation: cair4 30s infinite linear reverse;  
   animation-delay: 8s; 
  }
 #circle5{
-  animation: cair 5s infinite;  
+  animation: cair 5s infinite linear;  
  }
 #circle6{
-  animation: cair 5s infinite;  
+  animation: cair 5s infinite ;  
  }
 #circle7{
   animation: cair 5s infinite;  

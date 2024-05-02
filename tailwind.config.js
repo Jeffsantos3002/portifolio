@@ -20,7 +20,8 @@ export default {
       azul: '#00FFFA',
       iconTec: '#F3F2F2',
       projetos: '#343232',
-      modal: '#CD43FD'
+      modal: '#CD43FD',
+      headerBlue: '#61DAFB',
     },
     screens:{
       'xs': '380px',

@@ -1,4 +1,4 @@
-export default function Header(){
+export default function Header({cor}){
 
   const ancoras = [
     {
@@ -21,7 +21,7 @@ export default function Header(){
 
   return(
 
-    <header className="navbar bg-bg/25 flex flex-row justify-between px-2 sm:px-5 fixed z-10">
+    <header className={`navbar ${ cor ? 'bg-bg/25' : 'bg-lilas '} flex flex-row justify-between px-2 sm:px-5 fixed z-20`}>
       <div className="navbar-start w-full">
         <div className="dropdown">
           <div tabIndex={0} role="button" className="btn btn-ghost lg:hidden">
@@ -33,7 +33,7 @@ export default function Header(){
             ))}
           </ul>
         </div>
-        <p className="text-2xl"><span className=" text-lilas">&lt;</span> Jeferson de O. <span className=" text-lilas">/&gt;</span></p>
+        <p className="text-2xl"><span className={` ${ cor ? 'text-lilas' : 'text-azul'} `}>&lt;</span> Jeferson <span className={` ${ cor ? 'text-lilas' : 'text-azul'} `}>/&gt;</span></p>
       </div>
       <div className="navbar-center hidden lg:flex">
         <ul className="menu menu-horizontal px-1">
