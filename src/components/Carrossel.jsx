@@ -31,7 +31,7 @@ function Carousel({slidesProps}) {
     const carousel = carouselRef.current;
     const activeSlide = carousel.querySelector('.carousel-item.active');
     if (activeSlide) {
-      activeSlide.scrollIntoView({ behavior: 'smooth' });
+      activeSlide.scrollIntoView({ behavior: 'smooth', block: 'nearest', inline: 'center' });
     }
     console.log(currentIndex);
   }, [currentIndex]); // Re-executar o efeito quando currentIndex mudar
