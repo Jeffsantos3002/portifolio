@@ -21,7 +21,8 @@ export default {
       iconTec: '#F3F2F2',
       projetos: '#343232',
       modal: '#CD43FD',
-      headerBlue: '#61DAFB',
+      headerTop: 'rgba(0, 0, 0, 0.25)',
+      headerDesloc: '#161616'
     },
     screens:{
       'xs': '380px',

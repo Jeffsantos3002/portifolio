@@ -1,5 +1,5 @@
 import React from "react";
-
+import '../animations.css'
 export default function Header({ cor }) {
   const ancoras = [
     {
@@ -30,7 +30,7 @@ export default function Header({ cor }) {
   return (
     <header
       className={`navbar ${
-        cor ? "bg-bg/25" : "bg-lilas "
+        cor ? "bg-headerTop" : "bg-headerDesloc "
       } flex flex-row justify-between px-2 sm:px-5 fixed z-20`}
     >
       <div className="navbar-start w-full">
@@ -57,12 +57,12 @@ export default function Header({ cor }) {
           </div>
           <ul
             tabIndex={0}
-            className="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow bg-bg rounded-box w-52"
+            className={`menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow ${cor ? "bg-headerTop" : "bg-headerDesloc "} rounded-box w-52`}
           >
             {ancoras.map((anc, index) => (
               <li key={index}>
                 <button
-                  className="rounded py-2 px-5 text-2xl"
+                  className={`py-2 bg-transparent text-2xl ${cor ? 'focus:text-lilas' : 'focus:text-azul'}`}
                   onClick={() => handleClick(anc.ancora)}
                 >
                   {anc.nome}
@@ -94,7 +94,7 @@ export default function Header({ cor }) {
           {ancoras.map((anc, index) => (
             <li key={index}>
               <button
-                className="rounded py-2 px-5 text-2xl"
+                className={`py-2 bg-transparent text-2xl ${cor ? 'focus:text-lilas' : 'focus:text-azul'}`}
                 onClick={() => handleClick(anc.ancora)}
               >
                 {anc.nome}
