@@ -11,7 +11,7 @@ export default function Contato(){
         <Title texto={"Contato"} color={"bg-lilas"}/>
         <p className="text-2xl text-center">Entre em contato para demais informções!</p>
       </div>
-      <div className="flex flex-col lg:flex-row items-center justify-center lg:space-x-56 h-full ">
+      <div className="flex flex-col lg:flex-row items-center justify-center space-x-0 lg:space-x-56 h-full ">
         <img src={Icon} alt="icon-mensagem" title="icon-mensagem" className="hidden w-56 lg:flex"/>
         <ContatoForm/>
       </div>
