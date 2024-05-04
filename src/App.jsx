@@ -5,6 +5,7 @@ import Inicio from "./sections/Inicio";
 import Sobre from "./sections/Sobre";
 import Projetos from "./sections/Projetos";
 import Contato from "./sections/Contato";
+import Footer from "./components/Footer";
 
 import { useInView } from 'react-intersection-observer';
 import { useState } from "react";
@@ -39,7 +40,7 @@ function App() {
         <Sobre />
         <Projetos/>
         <Contato/>
-       
+        <Footer/>
       </main>
     </div>
   );
