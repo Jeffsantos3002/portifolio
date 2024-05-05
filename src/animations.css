@@ -1,0 +1,136 @@
+.cubo {
+  width: 250px;
+  height: 250px;
+  --clr-alpha: black;
+  animation: girar 20s infinite linear;
+  transform-style: preserve-3d;
+}
+.cubo > img {
+  background-color: var(--clr-alpha);
+  height: 100%;
+  position: absolute;
+  width: 100%;
+  /* border: 5px solid var(--clr); */
+}
+
+/* Transformações inimgiduais para cada face do cubo */
+.cubo img:nth-of-type(1) {
+  transform: translateZ(-125px) rotateY(180deg);
+}
+
+.cubo img:nth-of-type(2) {
+  transform: rotateY(-270deg) translateX(50%);
+  transform-origin: top right;
+}
+
+.cubo img:nth-of-type(3) {
+  transform: rotateY(270deg) translateX(-50%);
+  transform-origin: center left;
+}
+
+.cubo img:nth-of-type(4) {
+  transform: rotateX(90deg) translateY(-50%);
+  transform-origin: top center;
+}
+
+.cubo img:nth-of-type(5) {
+  transform: rotateX(-90deg) translateY(50%);
+  transform-origin: bottom center;
+}
+
+.cubo img:nth-of-type(6) {
+  transform: translateZ(125px);
+}
+
+.sombra{
+  animation: tamanho 5s infinite alternate;
+}
+@keyframes tamanho {
+  0% {
+    transform: scale(1); /* Tamanho normal */
+  }
+  100% {
+    transform: scale(1.3); /* Tamanho aumentado */
+  }
+}
+
+@keyframes girar {
+  0% {
+      transform: rotate(0deg) rotateX(0deg) rotateY(0deg);
+  }
+
+  50% {
+      transform: rotate(180deg) rotateX(180deg) rotateY(180deg);
+  }
+
+  100% {
+      transform: rotate(360deg) rotateX(360deg) rotateY(360deg);
+  }
+}
+
+/* ------------------Contato--------------------------------------*/
+
+#circle1{
+  left: 0;
+ animation: cair1 25s infinite linear reverse;  
+ animation-delay: 2s; 
+}
+#circle2{
+  animation: cair2 20s infinite linear reverse; 
+  animation-delay: 5s; 
+ }
+#circle3{
+  animation: cair3 15s infinite linear reverse;  
+  animation-delay: 3s; 
+ }
+#circle4{
+  top: 10px;
+  animation: cair4 30s infinite linear reverse;  
+  animation-delay: 8s; 
+ }
+#circle5{
+  animation: cair 5s infinite linear;  
+ }
+#circle6{
+  animation: cair 5s infinite ;  
+ }
+#circle7{
+  animation: cair 5s infinite;  
+ }
+#circle8{
+  animation: cair 5s infinite;  
+ }
+       
+
+@keyframes cair1 {
+  from{
+    transform: translateY(100vh);
+  }
+  to{
+    transform: translateY(0vh) translateX(100vw);
+  }
+}
+@keyframes cair2 {
+  from{
+    transform: translateY(100vh);
+  }
+  to{
+    transform: translateY(50vh) translateX(100vw);
+  }
+}
+@keyframes cair3 {
+  from{
+    transform: translateY(50vh) translateX(100vw);
+  }
+  to{
+    transform: translateY(80vh) translateX(0vw);
+  }
+}
+@keyframes cair4 {
+  from{
+    transform: translateY(0vh) translateX(0vw);
+  }
+  to{
+    transform: translateY(90vh) translateX(100vw);
+  }
+}
