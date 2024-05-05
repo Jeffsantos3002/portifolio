@@ -26,7 +26,7 @@ export default function Projetos(){
     {
       name: 'AVA',
       src: AVA,
-      description: '',
+      description:'Este é um projeto feito no processo seletivo para ingressar no Laboratório de Pesquisa Laís. Nesse repositório você encontrará o frontend que consome dados das API fornecida nessa etapa do processo seletivo.',
       github: 'https://github.com/Jeffsantos3002/AVA',
       deploy: 'https://ava-xi.vercel.app/',
       tecnologias: 'VueJs, Vue Router, Vuetify, Tailwind CSS, vue-google-charts, Axios, vue-lazyload. '
