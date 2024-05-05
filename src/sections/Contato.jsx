@@ -9,7 +9,7 @@ export default function Contato(){
       <span className=" bg-azul w-full h-2 mb-14"></span>
       <div className="flex flex-col items-center justify-center space-y-5 mb-10">
         <Title texto={"Contato"} color={"bg-lilas"}/>
-        <p className="text-2xl text-center">Entre em contato para demais informções!</p>
+        <p className="text-2xl text-center">Entre em contato para demais informações!</p>
       </div>
       <div className="flex flex-col lg:flex-row w-9/12 lg:items-center justify-center space-x-0 lg:space-x-56 h-full ">
         <img src={Icon} alt="mensage" className=" hidden lg:flex "/>
