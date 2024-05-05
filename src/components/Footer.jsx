@@ -19,7 +19,7 @@ export default function Footer(){
       <div className="flex flex-wrap justify-center md:justify-between space-y-5 sm:space-x-10 py-2.5 mb-7 ">
         <div className="min-w-[200px] max-w-[500px] space-y-2">
           <h1 className="text-2xl">Jeferson de Oliveira Santos</h1>
-          <p className="text-base">Um desenvolvedor Web focado em Frontend, construindo o Frontend de sites e aplicativos Web que leva ao sucesso do produto geral</p>
+          <p className="text-base">Um desenvolvedor Web que constroi sites e aplicativos levando produto geral ao sucesso.</p>
         </div>
         <div className="flex flex-col items-center justify-center">
           <Title texto={"Social"} color={''}/>

@@ -1,4 +1,5 @@
 import { useRef, useEffect } from "react";
+import { ParallaxProvider, Parallax } from 'react-scroll-parallax'; 
 
 import Header from "./components/Header";
 import Inicio from "./sections/Inicio";
@@ -11,35 +12,39 @@ import { useInView } from 'react-intersection-observer';
 import { useState } from "react";
 
 function App() {
-
   const [isIntersecting, setIsIntersecting] = useState(false);
   const sobreRef = useRef();
-
 
   // Configurações do Intersection Observer
   const { ref, inView } = useInView({
     threshold: 0.1 // Quando qualquer parte do elemento é visível dentro do viewport
   });
 
-    // Atualiza o estado quando ocorre interseção
-    useEffect(() => {
-      setIsIntersecting(inView);
-    }, [inView]);
-  
+  // Atualiza o estado quando ocorre interseção
+  useEffect(() => {
+    setIsIntersecting(inView);
+    console.log(inView, isIntersecting)
+  }, [inView]);
 
   // Classe condicional para alterar a cor do header
   const headerClass = isIntersecting ? true : false;
 
   return (
-    <div className='bg-bg w-full h-full'>
+    <div className='w-full h-full'>
       <Header cor={headerClass}/>
       <main>
-        <div ref={ref}> 
-          <Inicio />
-        </div>
-        <Sobre />
-        <Projetos/>
-        <Contato/>
+        <ParallaxProvider>
+          <Parallax speed={-100}> {/* Envolver o componente Inicio com Parallax */}
+            <Inicio />
+          </Parallax>
+          <Parallax speed={0}> {/* Envolver o componente Sobre com Parallax */}
+            <div ref={ref} >
+              <Sobre />
+              <Projetos/>
+              <Contato/>
+            </div>
+          </Parallax>
+        </ParallaxProvider>
         <Footer/>
       </main>
     </div>

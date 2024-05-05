@@ -22,11 +22,11 @@ export default function Início() {
   }
 
   return (
-    <div className="relative h-screen" id="inicio">
+    <div className=" h-screen" id="inicio">
       <video autoPlay playsInline loop muted className="w-full h-full object-cover opacity-70">
         <source src={bg} type="video/mp4" alt='video-background' className="absolute inset-0 " />
       </video>
-      <div className="absolute inset-0 flex items-center justify-center flex-col space-y-2.5">
+      <div className="absolute inset-0 flex items-center overflow-hidden justify-center flex-col space-y-2.5">
         <h1 className="text-white text-3xl sm:text-4xl 2xl:text-6xl font-bold">Jeferson de O. Santos</h1>
         <h2 className=" text-2xl sm:text-3xl 2xl:text-5xl font-mono">Desenvolvedor Web <span className=" text-lilas">&lt;/&gt;</span></h2>
 
