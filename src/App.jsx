@@ -30,7 +30,7 @@ function App() {
   const headerClass = isIntersecting ? true : false;
 
   return (
-    <div className='w-full h-full'>
+    <div className='w-full h-full text-white'>
       <Header cor={headerClass}/>
       <main>
         <ParallaxProvider>

@@ -5,7 +5,7 @@ import "../animations.css"
 
 export default function Contato(){
   return(
-    <div className="flex relative flex-col lg:h-screen pb-10 z-10 overflow-hidden items-center" id="contact">
+    <div className="flex relative flex-col lg:h-screen pb-10 z-10 overflow-hidden items-center bg-bg" id="contact">
       <span className=" bg-azul w-full h-2 mb-14"></span>
       <div className="flex flex-col items-center justify-center space-y-5 mb-10">
         <Title texto={"Contato"} color={"bg-lilas"}/>
