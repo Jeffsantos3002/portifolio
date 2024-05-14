@@ -22,7 +22,8 @@ export default {
       projetos: '#343232',
       modal: '#CD43FD',
       headerTop: 'rgba(0, 0, 0, 0.25)',
-      headerDesloc: '#161616'
+      headerDesloc: '#161616',
+      white: '#FFFFFF'
     },
     screens:{
       'xs': '380px',
