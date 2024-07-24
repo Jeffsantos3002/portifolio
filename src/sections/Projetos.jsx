@@ -63,7 +63,7 @@ export default function Projetos(){
         <Title texto={"Projetos"} color={"bg-azul"}/>
         <div className="w-full xl:max-w-[1200px] h-full flex flex-col xl:flex-row justify-center xl:justify-between items-center  px-5 pt-24">
           <div className="xl:max-w-[620px] font-mono text-2xl space-y-5">
-            <p className="text-center ">Transformando linhas de código em experiências inovadoras, trago o espírito do futuro para o presente através do meu trabalho.</p>
+            <p className="text-center ">Cada projeto é uma oportunidade de transformar desafios em experiências impactantes e de explorar o potencial ilimitado da tecnologia.</p>
             <p className=" text-azul text-center">Clique em uma das faces do cubo.</p>
           </div>
           <div className="mt-36 xl:mt-0 mb-14">
