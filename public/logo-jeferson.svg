@@ -1,0 +1,85 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Glow filter ciano -->
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Glow suave para borda -->
+    <filter id="softglow" x="-30%" y="-30%" width="160%" height="160%">
+      <feGaussianBlur stdDeviation="2.5" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Gradiente fundo hexágono -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d1117;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#0a1520;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradiente J -->
+    <linearGradient id="jGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5c4;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#00b4d8;stop-opacity:1" />
+    </linearGradient>
+
+    <!-- Gradiente borda -->
+    <linearGradient id="borderGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00f5c4;stop-opacity:1" />
+      <stop offset="50%" style="stop-color:#0077b6;stop-opacity:0.6" />
+      <stop offset="100%" style="stop-color:#00f5c4;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+
+  <!-- Fundo hexagonal -->
+  <polygon
+    points="100,10 182,55 182,145 100,190 18,145 18,55"
+    fill="url(#bgGrad)"
+    stroke="url(#borderGrad)"
+    stroke-width="2.5"
+    filter="url(#softglow)"
+  />
+
+  <!-- Detalhe: linha interna sutil -->
+  <polygon
+    points="100,20 172,61 172,139 100,180 28,139 28,61"
+    fill="none"
+    stroke="#00f5c440"
+    stroke-width="1"
+  />
+
+  <!-- Ponto de detalhe nos cantos superiores -->
+  <circle cx="100" cy="10" r="3" fill="#00f5c4" filter="url(#glow)" />
+  <circle cx="182" cy="55" r="3" fill="#00f5c4" filter="url(#glow)" opacity="0.6"/>
+  <circle cx="18" cy="55" r="3" fill="#00f5c4" filter="url(#glow)" opacity="0.6"/>
+
+  <!-- Letra J — traço customizado, moderno -->
+  <!-- Haste vertical do J -->
+  <rect x="107" y="52" width="14" height="62" rx="7" fill="url(#jGrad)" filter="url(#glow)" />
+
+  <!-- Curva inferior do J -->
+  <path
+    d="M 121 110 Q 121 142 97 142 Q 75 142 73 122"
+    fill="none"
+    stroke="url(#jGrad)"
+    stroke-width="14"
+    stroke-linecap="round"
+    filter="url(#glow)"
+  />
+
+  <!-- Ponto decorativo no topo do J -->
+  <rect x="95" y="52" width="26" height="14" rx="7" fill="url(#jGrad)" filter="url(#glow)" />
+
+  <!-- Linha de acento decorativa embaixo -->
+  <line x1="70" y1="162" x2="130" y2="162" stroke="#00f5c4" stroke-width="1.5" stroke-linecap="round" opacity="0.5" />
+  <circle cx="100" cy="162" r="2.5" fill="#00f5c4" opacity="0.8" />
+
+</svg>
